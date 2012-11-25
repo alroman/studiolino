@@ -1,18 +1,80 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
     <title>Studiolino</title>
 
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="js/jquery-1.8.3.min.js"></script>
 
     <script type="text/javascript">
-
+        $.getJSON('https://api.github.com/users/alroman/repos', function(data) {
+            // console.log(data)
+            $.each(data, function(k, v) {
+                console.log(v)
+            })
+        })
     </script>
+    <style type="text/css">
+        @font-face {
+            font-family: logo-font;
+            src: url('webfont/Junction-webfont.ttf');
+        }
+        @font-face {
+            font-family: logo-font-chunky;
+            src: url('webfont/Chunkfive-webfont.ttf');
+        }
+        body {
+            background-color: #F8FAF0;
+            color: #221C1C;
+        }
+        .outer-wrapper {
+            box-shadow:0 3px 7px rgba(0, 0, 0, 0.147);
+            border-radius: 6px 6px 6px 6px;
+            padding: 1px;
+            border:1px solid #907979;
+            background-color: white
+        }
+        .inner-wrapper {
+            margin: 1px;
+            border: 1px dashed #DDD;
+            padding: 10px;
+            border-radius: 4px 4px 4px 4px;
+            height: 100%;
+        }
+        .foologo {
+            border-bottom: 1px solid #DDD;
+            font-family: logo-font-chunky;
+            font-size: 3em;
+            font-weight: bold;
+            color: #D05023
+        }
+    </style>
 </head>
+
 <body>
-    <div id="content" ></div>
+
+    <div class="container">
+        <div clas="row" style="margin-top: 20px">
+            <div class="span2"></div>
+            <div class="span8 outer-wrapper">
+                <div class="inner-wrapper">
+                    <h1 class="foologo">
+                    Studiolino
+
+                    </h1>
+                    <div>
+                        Who does homepages anymore?  Here's my github repo
+                    </div>
+
+                </div>
+            </div>
+            <div class="span2"></div>
+        </div>
+    </div>
+
 </body>
 </html>
