@@ -1,0 +1,107 @@
+@font-face {
+    font-family: logo-font;
+    src: url('webfont/Junction-webfont.ttf');
+}
+@font-face {
+    font-family: logo-font-chunky;
+    src: url('webfont/Chunkfive-webfont.ttf');
+}
+@font-face {
+    font-family: ostrich-lite;
+    src: url('webfont/ostrich-light-webfont.ttf');
+}
+@font-face {
+    font-family: ostrich-dark;
+    src: url('webfont/ostrich-black-webfont.ttf');
+}
+body {
+    background-color: #F8FAF0;
+    color: #221C1C;
+}
+.outer-wrapper {
+    box-shadow:0 3px 7px rgba(0, 0, 0, 0.147);
+    border-radius: 6px 6px 6px 6px;
+    padding: 1px;
+    border:1px solid #907979;
+    /*background-color: white;*/
+
+    background-color: #AACC00;
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0.2) 75%, transparent 75%, transparent);
+    background-size: 50px 50px;
+}
+.inner-wrapper {
+    margin: 1px;
+    border: 1px dashed #DDD;
+    padding: 10px;
+    border-radius: 4px 4px 4px 4px;
+    height: 100%;
+}
+.inner-wrapper-top {
+    border-bottom: 0;
+    border-radius: 4px 4px 0px 0px;
+    padding: 0 10px;
+}
+.inner-wrapper-bottom {
+    border-top: 0;
+    border-radius: 0px 0px 4px 4px;
+}
+
+.foologo {
+    font-family: ostrich-dark;
+    font-size: 3em;
+    font-weight: bold;
+    /*color: #D05023;*/
+    color: white;
+
+    margin-bottom: 0;
+    text-shadow: 1px 2px 4px #778F00;
+    /*text-align: center;*/
+}
+
+#coderwall-container {
+    margin-top: 10px;
+    border-top: 1px solid #CCC;
+    padding-top: 10px;
+}
+.coderwall {
+    display: inline-block;
+    text-align: center;
+}
+.coderwall-root {
+    float: none;
+}
+#github-container .table {
+    font-size: .9em;
+}
+h1 small {
+    clear: left;
+    display: inline-block;
+    font-size: 0.5em;
+}
+
+#github-container {
+    display: block;
+    margin-top: 40px;
+}
+.github-item {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+    background-color:#4CC9DF;
+    width: 235px;
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+h3.github-title {
+    color: white;
+    padding: 5px;
+    text-align: center;
+    font-family: ostrich-lite;
+}
+.github-desc {
+    background-color: white;
+    padding: 10px
+}
+.github-link {
+    display: inline-block;
+    width: 100%;
+}
