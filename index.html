@@ -42,8 +42,8 @@
                     content : 'More info',
                     attribs : {
                         'class' : 'github-link',
-                        'href' : v.url,
-                        'title' : v.url
+                        'href' : v.html_url,
+                        'title' : v.html_url
                     }
                 })
                 var content = new html_element({
@@ -80,20 +80,23 @@
 <body>
 
     <div class="container">
-        <div class="row">
+        <div class="row-fluid">
             <div class="span12">
                 <img src="img/logo_main.png" alt="" class="logoimg">
             </div>
         </div>
-        <div class="row">
+        <div class="row-fluid">
             <div class="span4"></div>
             <div class="span4 content-blurb content-divider" >
+                <p>
                  I'm a software developer at UCLA.  I work on the primary course management system on campus
                  which we like to call <a href="http://ccle.ucla.edu">CCLE</a>.
+                </p>
+
              </div>
             <div class="span4"></div>
         </div>
-        <div class="row">
+        <div class="row-fluid">
             <div class="span4"></div>
             <div class="span4 content-divider">
                 <div class="content-blurb" style="margin-bottom: 30px;">
@@ -107,7 +110,7 @@
             </div>
             <div class="span4"></div>
         </div>
-        <div class="row">
+        <div class="row-fluid">
             <div class="span4"></div>
             <div class="span4 content-blurb content-divider">
                 I also keep a coderwall because I'm a programming nerd.  Here are my bad ass coder achievements:
@@ -115,7 +118,7 @@
             </div>
             <div class="span4"></div>
         </div>
-        <div class="row">
+        <div class="row-fluid">
             <div class="span3"></div>
             <div class="span6 content-blurb content-divider">
                 In a past lifetime I did graphic design and GUI programming.  Here are some of the many the cool projects
