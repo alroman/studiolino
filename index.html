@@ -18,12 +18,12 @@
 
         // This script will get the public repos for alroman
         // The data is then parsed to create a nice list of project boxes
-        $.getJSON('https://api.github.com/users/alroman/repos', function(data) {
+        $.getJSON('https://api.github.com/users/alroman/repos?callback=?', null, function(data) {
 
             var colors = ['#4CC9DF', '#93C200', '#FFA753', '#FE4E4E', '#3C3C3C', '#CCC200']
             var html = '';
 
-            $.each(data, function(k, v) {
+            $.each(data.data, function(k, v) {
 
                 // Same as 'continue'
                 // I don't want to display projects I've forked
@@ -161,7 +161,6 @@
             html += a.render();
         }
 
-        console.log(html);
         $('#sf-container').html(html);
 
         </script>
