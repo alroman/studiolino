@@ -12,23 +12,27 @@ const Main = styled.div`
   align-items:center;
   flex-direction: column;
   height: 100%;
+  font-family: sans-serif;
+  
+  color: white;
+  width: 75px;
+  margin: auto;
 
-  div {
+  .sl {
+    margin: auto;
+    padding: 10px;
+    background-color: tomato;
+    writing-mode: vertical-rl;
     font-size: 3rem;
     line-height: 1;
-
-    &.small {
-      margin-left: 20px;
-      font-size: 2.2rem;
-    }
   }
 
 `
 const IndexPage = () => (
   <Layout>
-    <SEO title="Studiolino" />
+    <SEO title="Studiolino.com" />
     <Main>
-      <div>ス</div><div>タ</div><div>デ</div><div className='small'>ィ</div><div>オ</div><div>リ</div><div>ノ</div>
+      <div className='sl'>スタディオリノ</div>
     </Main>
   </Layout>
 )
